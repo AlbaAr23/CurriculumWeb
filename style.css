@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .wrapper {
@@ -247,12 +247,13 @@ p {
 
 .contact_section {
     background-color: #490c29;
-    padding: 3em;
+    padding: 2em;
+    height: 740px;
 
 }
 
 .contact_heading h2 {
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 .container_contact {
@@ -265,9 +266,10 @@ p {
 }
 
 .container_contact img {
-    width: 750px;
-    height: 750px;
+    width: 600px;
+    height: 600px;
     bottom: 0px;
+
 
 }
 
@@ -278,13 +280,19 @@ p {
     color: #fff;
 }
 
+.contact_form h4 {
+    font-size: 2em;
+}
+
 .form_control {
     display: flex;
     flex-direction: column;
     justify-content: baseline;
     align-items: center;
+    font-size: 3em;
     width: 30vw;
     margin-top: 2em;
+    margin-left: 2em;
 }
 
 form input {
@@ -302,4 +310,39 @@ form textarea {
     color: #fff;
     padding: 1.5em;
     border-bottom: 1px solid #fff;
+}
+
+.btn_submit {
+    padding: 10px 20px;
+    margin: 1em;
+    border: none;
+    text-transform: uppercase;
+    background-color: #f10774;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgb(100, 230, 200, 0.69);
+}
+
+.btn_submit:hover {
+    background-color: #80204d;
+    box-shadow: none;
+
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+    background-color: #af3c72;
+}
+
+.footer h2 {
+    font-size: 3em;
+}
+
+.footer h5 {
+    font-size: 1.5em;
 }
