@@ -41,6 +41,12 @@ body {
 
 }
 
+
+
+.menu-check {
+    display: none;
+}
+
 .menu:hover {
     transform: rotate(360deg);
 }
@@ -74,8 +80,6 @@ body {
 
 .menu .active {
     color: #f10774;
-
-
 }
 
 .main {
@@ -88,7 +92,11 @@ body {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: clam(4vw, 1.5em, 3em);
+}
+
+.info-content span {
+    color: #af3c72;
 }
 
 span {
@@ -290,7 +298,7 @@ p {
     justify-content: baseline;
     align-items: center;
     font-size: 3em;
-    width: 30vw;
+    width: 10vw;
     margin-top: 2em;
     margin-left: 2em;
 }
@@ -303,6 +311,7 @@ form input {
     border-bottom: 1px solid #fff;
     color: #fff;
 }
+
 
 form textarea {
     height: 150px;
@@ -345,4 +354,86 @@ form textarea {
 
 .footer h5 {
     font-size: 1.5em;
+}
+
+
+@media all and (max-width: 765px) {
+    .menu {
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vw;
+        background-color: #af3c72;
+        z-index: 1;
+        transform: translateX(-110%);
+        transition: all .5s ease-in-out;
+    }
+
+    .show-menu {
+        transform: translateX(0%);
+        transition: all .5s ease-in-out;
+    }
+
+    .menu li {
+        margin: 2em 2em;
+    }
+
+    .toogle_menu {
+        display: block;
+    }
+
+    .fa-bars {
+        font-size: 1.2em;
+        margin-top: -.2em;
+    }
+
+    .toogle_menu .fa-close {
+        font-size: 1.7em;
+        display: none;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .info-content_p {
+        display: none;
+    }
+
+    .main img {
+        width: min(70%, 350px);
+        height: auto;
+    }
+
+    .info-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download-cv {
+        display: none;
+    }
+
+    .info-content .info-content-subtitle {
+        display: block;
+    }
+
+    .info-content_p {
+        display: none;
+    }
+
+    .about img {
+        width: min(70%, 350px);
+        height: auto;
+    }
+
+    .container_contact img {
+        display: none;
+    }
+
 }

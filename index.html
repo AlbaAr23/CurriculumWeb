@@ -19,19 +19,26 @@
                 <div class="brand">
                     <h2>A.<span>A.</span>D.</h2>
                 </div>
+
                 <ul class="menu">
                     <li><a class="active" href="#">Home</a></li>
                     <li><a href="#">About me</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
+                <div class="toogle_menu">
+                    <i class="fas fa-bars" id="toggle_open"></i>
+                    <i class="fas fa-close" id="toggle_close"></i>
+                </div>
             </nav>
         </header>
 
         <main class="main">
             <div class="info-content">
+                <span class="info-content-subtitle">Fronted Developer</span>
                 <h1>I´m <span>Alba </span>Armas Díaz</h1>
-                <p>I am a punctual, respectful, hardworking, patient, and organized person. I can make mistakes like
+                <p class="info-content_p">I am a punctual, respectful, hardworking, patient, and organized person. I can
+                    make mistakes like
                     anyone else. I am always willing to learn more and update myself.</p>
                 <a download href="#">
                     <button class="download-cv">Download CV</button>
@@ -105,9 +112,19 @@
             <div class="contact_form">
                 <h4>Send me a message...</h4>
                 <form class="form_control">
-                    <input type="text" placeholder="Name">
-                    <input type="email" placeholder="Email">
-                    <input type="number" placeholder="Number">
+                    <!-- nombre del usuario -->
+                    <input type="text" required="true" id="Nombre" placeholder="Name">
+                    <!-- apellidos -->
+                    <input type="text" required="true" id="apellidos" name="apellidos" placeholder="Surnames">
+                    <!-- poner el email -->
+                    <input type="Email" required="true" id="Email" placeholder="Email.@gmail.com">
+                    <!-- poner una contraseña  -->
+                    <input type="contraseña" required="true" id="contraseña" placeholder="Password">
+                    <!-- telefono -->
+                    <input type="tel" required="true" id="telefono" placeholder="Telephone">
+                    <!-- edad -->
+                    <input type="number" required="true" id="edad" placeholder="Age">
+
                     <textarea placeholder="Please your message here...">
                     </textarea>
                     <button class="btn_submit">Send message</button>
