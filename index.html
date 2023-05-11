@@ -20,13 +20,13 @@
                     <h2>A.<span>A.</span>D.</h2>
                 </div>
 
-                <ul class="menu">
+                <ul id="menu">
                     <li><a class="active" href="#">Home</a></li>
-                    <li><a href="#">About me</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact_section">Contact</a></li>
                 </ul>
-                <div class="toogle_menu">
+                <div class="show-menu">
                     <i class="fas fa-bars" id="toggle_open"></i>
                     <i class="fas fa-close" id="toggle_close"></i>
                 </div>
@@ -47,7 +47,7 @@
             <img src="./img/foto2 .png" alt="">
         </main>
     </div>
-    <div class="about">
+    <div class="about" id="about">
         <img src="./img/about-me.png" alt="picture">
 
         <div class="about-info">
@@ -66,7 +66,7 @@
 
         </div>
     </div>
-    <div class="porfolio">
+    <div class="porfolio" id="portfolio">
         <div class="porfolio-headings">
             <h2>My Portfolio</h2>
             <div class="divider"></div>
@@ -102,7 +102,7 @@
             </div>
         </div>
     </div>
-    <div class="contact_section">
+    <div class="contact_section" id="contact_section">
         <div class="contact_heading">
             <h2>Keep in touch</h2>
             <div class="divider"></div>
@@ -119,11 +119,11 @@
                     <!-- poner el email -->
                     <input type="Email" required="true" id="Email" placeholder="Email.@gmail.com">
                     <!-- poner una contraseña  -->
-                    <input type="contraseña" required="true" id="contraseña" placeholder="Password">
+                    <input type="password" required="true" id="password" placeholder="Password">
                     <!-- telefono -->
-                    <input type="tel" required="true" id="telefono" placeholder="Telephone">
+                    <input type="tel" required="true" id="telephone" placeholder="Telephone">
                     <!-- edad -->
-                    <input type="number" required="true" id="edad" placeholder="Age">
+                    <input type="number" required="true" id="Age" placeholder="Age">
 
                     <textarea placeholder="Please your message here...">
                     </textarea>
@@ -139,7 +139,7 @@
             <h5>Fronted Developer</h5>
         </div>
     </footer>
-    <script src="main.js"></script>
+    <script src="./scripts.js"></script>
 </body>
 
 </html>

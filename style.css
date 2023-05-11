@@ -34,7 +34,7 @@ body {
     color: #f10774;
 }
 
-.menu {
+#menu {
     display: flex;
     width: 50%;
     justify-content: space-around;
@@ -47,15 +47,15 @@ body {
     display: none;
 }
 
-.menu:hover {
+#menu:hover {
     transform: rotate(360deg);
 }
 
-.menu li {
+#menu li {
     list-style: none;
 }
 
-.menu a {
+#menu a {
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
@@ -73,12 +73,12 @@ body {
     }
 }
 
-.menu a:hover {
+#menu a:hover {
     background-color: #68153b;
     color: #f10774;
 }
 
-.menu .active {
+#menu .active {
     color: #f10774;
 }
 
@@ -358,7 +358,7 @@ form textarea {
 
 
 @media all and (max-width: 765px) {
-    .menu {
+    #menu {
         flex-direction: column;
         justify-content: center;
         position: absolute;
@@ -376,7 +376,7 @@ form textarea {
         transition: all .5s ease-in-out;
     }
 
-    .menu li {
+    #menu li {
         margin: 2em 2em;
     }
 
