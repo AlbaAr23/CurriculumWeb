@@ -296,10 +296,10 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: baseline;
-    align-items: center;
+    align-items:flex-start;
     font-size: 3em;
     width: 10vw;
-    margin-top: 2em;
+    margin-top: 1em;
     margin-left: 2em;
 }
 
